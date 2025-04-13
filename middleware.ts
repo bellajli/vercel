@@ -9,7 +9,6 @@ const protectedPaths = [
   "/maintenance",
   "/finance",
   "/calendar",
-  "/committee",
   "/profile",
   "/settings",
 ]
