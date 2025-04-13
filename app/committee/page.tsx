@@ -20,18 +20,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 
 export default function Committee() {
-  const [isLoading, setIsLoading] = useState(true)
   const router = useRouter()
-
-  useEffect(() => {
-    // Check if user is logged in
-    const isLoggedIn = localStorage.getItem("isLoggedIn")
-    if (!isLoggedIn) {
-      router.push("/?login=true")
-      return
-    }
-    setIsLoading(false)
-  }, [router])
 
   const committeeMembers = [
     {
@@ -107,10 +96,6 @@ export default function Committee() {
       gender: "female",
     },
   ]
-
-  if (isLoading) {
-    return <div className="flex justify-center items-center min-h-[60vh]">Loading...</div>
-  }
 
   return (
     <div className="flex flex-col gap-4">
