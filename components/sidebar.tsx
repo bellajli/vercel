@@ -29,12 +29,12 @@ const navItems = [
   { name: "Home", href: "/", icon: Home, section: "Public" },
   { name: "About", href: "/about", icon: Info, section: "Public" },
   { name: "Contact", href: "/contact", icon: Mail, section: "Public" },
+  { name: "Committee", href: "/committee", icon: UserCircle, section: "Public"},
   { name: "Dashboard", href: "/dashboard", icon: Home, section: "Committee Portal", protected: true },
   { name: "Documents", href: "/documents", icon: FileText, section: "Committee Portal", protected: true },
   { name: "Communication", href: "/communication", icon: MessageSquare, section: "Committee Portal", protected: true },
   { name: "Maintenance", href: "/maintenance", icon: Wrench, section: "Committee Portal", protected: true },
   { name: "Finance", href: "/finance", icon: DollarSign, section: "Committee Portal", protected: true },
-  { name: "Committee", href: "/committee", icon: UserCircle, section: "Committee Portal", protected: true },
   { name: "Profile", href: "/profile", icon: UserCircle, section: "Account", protected: true },
   { name: "Settings", href: "/settings", icon: Settings, section: "Account", protected: true },
 ]
